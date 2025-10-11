@@ -3,10 +3,13 @@
 <body bgcolor="#7287d6">
 <div style="font-size:37px;">
 <script language="JavaScript">
-var m_Zło = prompt("zmienna m:", "");
-var m = parseInt(m_Zło);
-document.write("wartość m = " + m);
-function okno_zamknij() 
+var m_Zło=prompt("Podaj m:","");
+var m=parseInt(m_Zło);
+var a = m + 1;
+var b = m * (m + 1);
+var c = m * (m + 1) * (m + 2); 
+document.write("1/" + m + " = 1/" + a + " + 1/" + b + " + 1/" + c);
+function okno_zamknij()
 {
 window.close()
 }
