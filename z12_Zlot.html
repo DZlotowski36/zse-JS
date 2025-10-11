@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor=#7287d6>
+<div style="color:green;font-size:42px;">
+<script language="JavaScript">
+var D1_Zło = prompt("dzień 1 = ", "");
+var G1_Zło = prompt("godzina 1 = ", "");
+var D2_Zło = prompt("dzień 2 = ", "");
+var G2_Zło = prompt("godzina 2 = ", "");
+var data1 = new Date(2025, 0, parseInt(D1_Zło), parseInt(G1_Zło));
+var data2 = new Date(2025, 0, parseInt(D2_Zło), parseInt(G2_Zło));
+var wynik = (data2 - data1) / 1000;
+document.write("ilość sekund = " + wynik);
+function okno_zamknij() 
+{
+window.close()
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+</body>
+</html>
