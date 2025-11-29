@@ -1,0 +1,35 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html>
+<head>
+</head>
+<body>
+<body bgcolor=#7287d6>
+<script>
+var x1_zło = parseFloat(prompt("Podaj x1 w stopniach:"));
+var x2_zło = parseFloat(prompt("Podaj x2 w stopniach:"));
+document.write("x1=" + x1_zło + "&emsp;&emsp; x2=" + x2_zło + "<br>");
+document.write("x1=" + x1_zło + "&emsp;&emsp; x1=" + (x1_zło * Math.PI / 180).toFixed(2));
+var y1 = (3 * x1_zło / (6/ 6 + 2)).toFixed(2);
+var y2 = (2 * Math.cos(x1_zło * Math.PI / 180) + 3 * Math.sin(x1_zło * Math.PI / 180)).toFixed(2);
+var y3 = (Math.cbrt(Math.pow(x1_zło, 5) + 2 * Math.pow(x2_zło, 4)) * Math.abs(x1_zło - x2_zło)).toFixed(2);
+document.write("<br>");
+document.write("y1=" + y1 + "<br>");
+document.write("y2=" + y2 + "<br>");
+document.write("y3=" + y3 + "<br>");
+</script>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+</html>
