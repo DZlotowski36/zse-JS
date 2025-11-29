@@ -1,0 +1,60 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<body bgcolor=#7287d6>
+<script type="text/javascript">
+function AB_zło() {
+let aX_zło = parseFloat(document.getElementById('aX').value);
+let aY_zło = parseFloat(document.getElementById('aY').value);
+let bX_zło = parseFloat(document.getElementById('bX').value);
+let bY_zło = parseFloat(document.getElementById('bY').value);
+document.getElementById("odpowiedz").innerHTML = "AB= "
++ (Math.sqrt((aX_zło - bX_zło) ** 2 + (aY_zło - bY_zło) ** 2)).toFixed(2);
+}
+function BC_zło() {
+let bX_zło = parseFloat(document.getElementById('bX').value);
+let bY_zło = parseFloat(document.getElementById('bY').value);
+let cX_zło = parseFloat(document.getElementById('cX').value);
+let cY_zło = parseFloat(document.getElementById('cY').value);
+document.getElementById("odpowiedz").innerHTML = "BC= "
++ (Math.sqrt((bX_zło - cX_zło) ** 2 + (cY_zło - cY_zło) ** 2)).toFixed(2);
+}
+function AC_zło() {
+let aX_zło = parseFloat(document.getElementById('bX').value);
+let aY_zło = parseFloat(document.getElementById('bY').value);
+let cX_zło = parseFloat(document.getElementById('cX').value);
+let cY_zło = parseFloat(document.getElementById('cY').value);
+document.getElementById("odpowiedz").innerHTML = "AC= "
++ (Math.sqrt((aX_zło - cX_zło) ** 2 + (aY_zło - cY_zło) ** 2)).toFixed(2);
+}
+</script>
+Podaj X punktu A: <input type="text" id="aX"><br>
+Podaj Y punktu A: <input type="text" id="aY"><br>
+Podaj X punktu B: <input type="text" id="bX"><br>
+Podaj Y punktu B: <input type="text" id="bY"><br>
+Podaj X punktu C: <input type="text" id="cX"><br>
+Podaj Y punktu C: <input type="text" id="cY"><br>
+<input type="button" value="Oblicz AB" Onclick="AB_zło()"><br><br>
+<input type="button" value="Oblicz BC" Onclick="BC_zło()"><br><br>
+<input type="button" value="Oblicz AC" Onclick="AC_zło()"><br><br>
+<div id="odpowiedz"></div>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+</html>
