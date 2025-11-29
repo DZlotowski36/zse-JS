@@ -1,0 +1,44 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+script type="text/javascript">
+function pole_zło()
+{
+var a_zło = parseFloat(document.getElementById('a').value);
+var b_zło= parseFloat(document.getElementById('b').value);
+var result1 = a_zło*b_zło;
+document.getElementById("odpowiedz").innerHTML = "Pole= "+result1.toFixed(2)+" cm^2";
+}
+function obwod_zło()
+{
+var a_zło= parseFloat(document.getElementById('a').value);
+var b_zło= parseFloat(document.getElementById('b').value);
+var result2= b_zło+b_zło+a_zło+a_zło;
+document.getElementById("odpowiedz").innerHTML = "Obwód = "+result2.toFixed(2)+" cm";
+}
+</script>
+<br><br>
+Podaj punkt A: <input type="text" id="a"><br>
+Podaj punkt B: <input type="text" id="b"><br>
+<input type="button" value="Oblicz pole" Onclick="pole_zło()"><br><br>
+<input type="button" value="Oblicz obwód" Onclick="obwod_zło()"><br><br>
+<div style="color:red;font-size:50px;"id="odpowiedz"></div>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+</html>
