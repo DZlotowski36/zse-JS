@@ -1,0 +1,43 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<body bgcolor=#7287d6>
+<script type="text/javascript">
+function pole_zło()
+{
+var a_zło= parseFloat(document.getElementById('dlugosc').value);
+var b_zło= a_zło*a_zło;
+document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_zło.toFixed(2)+" cm^2";
+}
+function obwod_zło()
+{
+var a_zło= parseFloat(document.getElementById('dlugosc').value);
+var b_zło= 4*a_zło;
+document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_zło.toFixed(2)+" cm";
+}
+</script>
+<h1>Wszystko o KWADRACIE</h1><br><br>
+Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+<input type="button" name="pole" value="Oblicz pole" Onclick="pole_zło()"><br><br>
+<input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_zło()"><br><br>
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+</html>
