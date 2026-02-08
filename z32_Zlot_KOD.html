@@ -1,0 +1,44 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html>
+<head>
+<script type="text/javascript">
+            function wierzowiec(piętra_k, wysokosc_k, rok_k){
+                this.piętra=piętra_k;
+                this.wysokosc=wysokosc_k;
+                this.wejscia=rok_k;
+            }
+            wierzowiec.prototype.wypisz = function(){
+                alert(this.piętra+' '+this.wysokosc+' '+this.rok);
+            };
+            var budynek1 = new wierzowiec("17", "90m", "1965");
+            var budynek2 = new wierzowiec("14", "75m", "1967");
+            budynek1.wypisz();
+            budynek2.wypisz();
+
+        </script>
+
+</head>
+<body>
+  <body bgcolor=#7287d6>
+        <br><br>
+        Programowanie obiektowe. <br><br>
+        Obiekt to wierzowiec<br>
+        wysokosc:<br>
+        pietra<br>
+        rok<br>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+</html>
