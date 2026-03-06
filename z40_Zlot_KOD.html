@@ -1,0 +1,48 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<title>Złotowski Z40_KOD</title>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html>
+<meta charset="UTF-8">
+<title>Złotowski Z40_JS</title>
+<body bgcolor=#7287d6>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var x=prompt("podaj argument x=","");
+var x_zlo=parseFloat(x);
+document.write("wykonał Dawid Złotowski<br>");
+document.write("czytany argument x="+x_zlo.toFixed(2)+"<br>");
+function f_zlo(x_zlo) 
+{
+if(x_zlo>=2) {return 9;
+}
+if((x_zlo>=-2)&&(x_zlo<0)) {return (x_zlo+1)*(x_zlo+1);
+}
+if((x_zlo>=0)&&(x_zlo<2)) {return (x_zlo*x_zlo*x_zlo)+1;
+}
+if(x_zlo<-2) {return 1;}
+}
+document.write("f("+x_zlo.toFixed(2)+")="+f_zlo(x_zlo).toFixed(2)+"<br><br>");
+function okno_zamknij()
+{ 
+window.close() 
+} 
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<!-- Złotowski Z40_JS -->
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+<!-- Złotowski Z40_KOD -->
+</html>
