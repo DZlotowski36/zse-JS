@@ -1,0 +1,26 @@
+<html>
+<lang="pl-PL">
+<meta charset="utf-8">
+<title>Złotowski Z35_JS</title>
+<body bgcolor=#7287d6>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+function okno_zamknij() 
+{
+window.close()
+}
+var x=prompt("podaj liczbę x=","");
+var a_dana_zlo=parseFloat(x);
+document.write("Czytana liczba x="+a_dana_zlo+"<br>");
+  if(a_dana_zlo>0)
+{document.write("Czytana liczba jest większa od 0"+"<br>");}
+  if(a_dana_zlo==0)
+{document.write("Czytana liczba jest równa 0"+"<br>");}
+  if(a_dana_zlo<0)
+{document.write("Czytana liczba jest mniejsza od 0"+"<br>");}   
+</script>
+</div>
+<br><input type="button" value="zamknij okno" onclick="okno_zamknij()">
+</body>
+<!-- Złotowski Z35_JS -->
+</html>
