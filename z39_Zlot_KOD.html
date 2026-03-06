@@ -15,28 +15,41 @@ window.close()
 <title>Złotowski Z39_JS</title>
 </head>
 <body bgcolor=#7287d6>
-<h1 style="color:green;">MENU</h1><br>
-<h2 style="color:red;">1-CZERWONY</h2>
-<h2 style="color:blue;">2-NIEBIESKI</h2>
-<input type="button" name="Złotowski" value="Oblicz" onclick="fun_Zlo()"/>
-<script>
-function okno_zamknij() 
-{
-window.close()
-}
-function fun_Zlo() 
-{
-var x_Zlo = prompt("Podaj kolor","");
-if(x_Zlo == 1 || x_Zlo.toLowerCase() == "czerwony") 
-{
-document.write('<font color="red" size="7">wczytałeś kolor czerwony</font>'); 
-}
-else if(x_Zlo == 2 || x_Zlo.toLowerCase() == "niebieski") 
-{
-document.write('<font color="blue" size="1">wczytałeś kolor niebieski</font>'); 
-}
-</script>
-<br><br><input type="button" value="zamknij okno" onclick="okno_zamknij()">
+<style>
+            #menu{
+                color: green;
+            }
+            #jeden{
+                color: red;
+            }
+            #dwa{
+                color: blue;
+            }
+            input{
+                border-radius: 0;
+                border: 1px solid gray;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="menu">MENU</h1>
+        <br>
+        <h2 id="jeden">1 - CZERWONY</h2>
+        <h2 id="dwa">2- NIEBIESKI</h2>
+        <input type="button" name="Złotowski" value="Oblicz" onclick="fun_zlo()" />
+        <script>
+            function fun_zlo() {
+                var x_zlo = prompt("Podaj kolor", "");
+                if(x_zlo == 1 || x_zlo.toLowerCase() == "czerwony") {
+                    document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+                else if(x_zlo == 2 || x_zlo.toLowerCase() == "niebieski") {
+                    document.write('<h6 style="color: blue;">wczytałeś kolor niebieski</h6><br />');
+                }
+            }
+        </script>
+    </body>
 <!-- Złotowski Z39_JS -->
 </body>
 </html>
