@@ -9,25 +9,25 @@
     let b_zlo;
     let c_zlo;
     do {
-        a_zlo = prompt("Podaj bok a trójkąta:");
-        a_zlo = parseFloat(a_zlo);
+ a_zlo = prompt("Podaj bok a trójkąta:");
+a_zlo = parseFloat(a_zlo);
     } while (a_zlo <= 0);
     do {
-        b_zlo = prompt("Podaj bok b trójkąta:");
-        b_zlo = parseFloat(b_zlo);
+b_zlo = prompt("Podaj bok b trójkąta:");
+b_zlo = parseFloat(b_zlo);
     } while (b_zlo <= 0);
     do {
-        c_zlo = prompt("Podaj bok c trójkąta:");
-        c_zlo = parseFloat(c_zlo);
+c_zlo = prompt("Podaj bok c trójkąta:");
+c_zlo = parseFloat(c_zlo);
     } while (c_zlo <= 0);
     if (
-        a_zlo + b_zlo > c_zlo &&
-        a_zlo + c_zlo > b_zlo &&
-        b_zlo + c_zlo > a_zlo
+a_zlo + b_zlo > c_zlo &&
+a_zlo + c_zlo > b_zlo &&
+b_zlo + c_zlo > a_zlo
     ) {
-        document.write("Z podanych boków można zbudować trójkąt.");
+document.write("Z podanych boków można zbudować trójkąt.");
     } else {
-        document.write("Z podanych boków nie można zbudować trójkąta.");
+document.write("Z podanych boków nie można zbudować trójkąta.");
     }
 </script>
 </div>
