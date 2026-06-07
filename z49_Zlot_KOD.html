@@ -1,0 +1,52 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<title>Złotowski Z49_KOD</title>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="color:red; font-size:40px;">
+<script>
+    let a_zlo;
+    let b_zlo;
+    let c_zlo;
+    do {
+ a_zlo = prompt("Podaj bok a trójkąta:");
+a_zlo = parseFloat(a_zlo);
+    } while (a_zlo <= 0);
+    do {
+b_zlo = prompt("Podaj bok b trójkąta:");
+b_zlo = parseFloat(b_zlo);
+    } while (b_zlo <= 0);
+    do {
+c_zlo = prompt("Podaj bok c trójkąta:");
+c_zlo = parseFloat(c_zlo);
+    } while (c_zlo <= 0);
+    if (
+a_zlo + b_zlo > c_zlo &&
+a_zlo + c_zlo > b_zlo &&
+b_zlo + c_zlo > a_zlo
+    ) {
+document.write("Z podanych boków można zbudować trójkąt.");
+    } else {
+document.write("Z podanych boków nie można zbudować trójkąta.");
+    }
+</script>
+</div>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+<!-- Złotowski Z49_KOD -->
+</html>
