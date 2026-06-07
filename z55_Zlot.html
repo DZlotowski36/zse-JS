@@ -1,0 +1,26 @@
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+let a_zlo = prompt("Podaj wysokość prostokąta:");
+let b_zlo = prompt("Podaj szerokość prostokąta:");
+a_zlo = parseInt(a_zlo);
+b_zlo = parseInt(b_zlo);
+let wiersz_zlo = "";
+for (let i_zlo = 1; i_zlo <= b_zlo; i_zlo++) {
+wiersz_zlo = wiersz_zlo + "*";
+}
+document.write(wiersz_zlo + "<br>");
+for (let i_zlo = 1; i_zlo <= a_zlo - 2; i_zlo++) {
+document.write("*");
+for (let d_zlo = 1; d_zlo <= b_zlo - 2; d_zlo++) {
+document.write("&nbsp;&nbsp;");
+}
+document.write("*<br>");
+}
+document.write(wiersz_zlo + "<br>");
+</script>
+</body>
+</html>
