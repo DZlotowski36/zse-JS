@@ -1,1 +1,20 @@
-
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="color:blue; font-size:5mm;">
+<script>
+let ile_zlo = prompt("Ile razy powtórzyć?");
+ile_zlo = parseInt(ile_zlo);
+let tekst_zlo = prompt("Podaj tekst, np. swoje inicjały:");
+for (let i_zlo = 1; i_zlo <= ile_zlo; i_zlo++) {
+for (let d_zlo = 1; d_zlo <= i_zlo; d_zlo++) {
+document.write("&nbsp;");
+}
+document.write(i_zlo + "_" + tekst_zlo + "_" + i_zlo + "<br>");
+}
+</script>
+</div>
+</body>
+</html>
