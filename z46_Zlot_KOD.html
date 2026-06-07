@@ -1,0 +1,38 @@
+<html>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close() 
+}
+</script>
+<title>Złotowski Z46_KOD</title>
+<body bgcolor=#7287d6>
+<form>
+<textarea name="Złotowski" cols="80" rows="40" readonly> 
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+    let liczba_liter_nazwiska_zlo = 9;
+    let ile_razy_wyswietlic_zlo = (liczba_liter_nazwiska_zlo % 4) + 10;
+    let wielkosc_liter_zlo = (liczba_liter_nazwiska_zlo % 3) + 40;
+    document.write("ilość wykonania pętli = " + ile_razy_wyswietlic_zlo + "<br>");
+    document.write("wielkość liter = " + wielkosc_liter_zlo + "px<br><br>");
+    for (let i_z = 1; i_z <= ile_razy_wyswietlic_zlo; i_g++) {
+        if (i_z % 2 == 1) {
+            document.write("<span style='font-size:" + wielkosc_liter_zlo + "px;'>Złotowski</span><br>");
+        } else {
+            document.write("<span style='font-size:" + wielkosc_liter_zlo + "px;'>Dawid</span><br>");
+        }
+    }
+</script>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body> 
+<!-- Złotowski Z46_KOD -->
+</html>
