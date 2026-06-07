@@ -2,22 +2,16 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<div style="color:red;font-size:50px;">
-  <script language="JavaScript">
-    do {
-      var liczba1=prompt("n=","");
-      var n_Zło=parseFloat(liczba1);
+<div style="color:red; font-size:30px;">
+<script>
+    let n_zlo = prompt("Podaj liczbę n:");
+    n_zlo = parseInt(n_zlo);
+    let silnia_zlo = 1;
+    for (let i_zlo = 1; i_zlo <= n_zlo; i_zlo++) {
+        silnia_zlo = silnia_zlo * i_zlo;
     }
-      while(n_Zło<0);
-    if(n_Zło==0{silnia_Zło=1;
-                document.write
-                  ("n="+n_Zło+<br>"+n_Zło+"!+"+silnia_Zło);
-                   }
-      if(n_Zło>0){silnia_Zło=1;
-                  for(i_Zło=1;i_Zło<n_Zło;i_Zło++)
-                  {silnia_Zło=silnia_Zło*i_Zło;}
-                  document.write
-                    ("n="+n_Zło+"<br>"+n_Zło+"!="+silnia_Zło);
+    document.write("n = " + n_zlo + "<br>");
+    document.write(n_zlo + "! = " + silnia_zlo);
 </script>
 </div>
 </body>
