@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Rodzaje pętli w programowaniu</h1>
+
+    <hr>
+
+    <h2>1. Pętla for</h2>
+
+    <h3>Nazwa pętli</h3>
+    <p>Pętla for</p>
+
+    <h3>Konstrukcja</h3>
+    <pre>
+for(inicjalizacja; warunek; zmiana)
+{
+    instrukcje;
+}
+    </pre>
+
+    <h3>Opis</h3>
+    <p>
+        Pętla for jest używana wtedy, gdy wiadomo ile razy
+        ma zostać wykonany dany fragment programu.
+    </p>
+
+    <h3>Schemat blokowy</h3>
+    <pre>
+Start
+  |
+Inicjalizacja
+  |
+Warunek?
+ /   \
+TAK  NIE
+ |     |
+Instr. Koniec
+ |
+Zmiana
+ |
+Powrót do warunku
+    </pre>
+
+    <hr>
+
+    <h2>2. Pętla while (z kontrolowanym wejściem)</h2>
+
+    <h3>Nazwa pętli</h3>
+    <p>Pętla while</p>
+
+    <h3>Konstrukcja</h3>
+    <pre>
+while(warunek)
+{
+    instrukcje;
+}
+    </pre>
+
+    <h3>Opis</h3>
+    <p>
+        Pętla while najpierw sprawdza warunek.
+        Jeśli warunek jest spełniony, wykonywane są instrukcje.
+        Dlatego jest to pętla z kontrolowanym wejściem.
+    </p>
+
+    <h3>Schemat blokowy</h3>
+    <pre>
+Start
+  |
+Warunek?
+ /   \
+TAK  NIE
+ |     |
+Instr. Koniec
+ |
+Powrót do warunku
+    </pre>
+
+    <hr>
+
+    <h2>3. Pętla do while (z kontrolowanym wyjściem)</h2>
+
+    <h3>Nazwa pętli</h3>
+    <p>Pętla do while</p>
+
+    <h3>Konstrukcja</h3>
+    <pre>
+do
+{
+    instrukcje;
+}
+while(warunek);
+    </pre>
+
+    <h3>Opis</h3>
+    <p>
+        Pętla do while wykonuje instrukcje co najmniej jeden raz,
+        ponieważ warunek sprawdzany jest na końcu.
+        Jest to pętla z kontrolowanym wyjściem.
+    </p>
+
+    <h3>Schemat blokowy</h3>
+    <pre>
+Start
+  |
+Instrukcje
+  |
+Warunek?
+ /   \
+TAK  NIE
+ |     |
+Powrót Koniec
+    </pre>
+
+</body>
+</html>
